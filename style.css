@@ -38,6 +38,11 @@
 
 #bar {
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
 }
 
 #content {
@@ -84,6 +89,39 @@ a {
     height: 2rem;
 }
 
+#searchbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 0 0 2rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+#input img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+
+#input input {
+    background: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+
 .sidebarText {
     width: 100%;
     text-align: center;
@@ -116,4 +154,59 @@ a {
     }
 }
 
+.profilePhoto {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
+.notification {
+    width: 2rem;
+    height: 2rem;
+}
+
+.profileLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#profile p {
+    font-weight: bold;
+}
+
+#toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+#profileLarge {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    margin-left: 2rem;
+}
+
+.smallText {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.postButton {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background-color: #47B5FF;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.postButton:hover {
+    cursor: pointer;
+    background-color: #0B3E9F;
+    transition: all 0.5s ease;
+}
