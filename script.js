@@ -3,6 +3,6 @@ document.getElementById('sidebarToggle').addEventListener('click', function() {
   document.getElementById('sidebar').classList.toggle('active');
   // from all elements that have sidebarText class toggle hiddenText class
     document.querySelectorAll('.sidebarText').forEach(function(element) {
-      element.classList.toggle('hiddenText');
+      element.classList.toggle('activeText');
     }); 
 });

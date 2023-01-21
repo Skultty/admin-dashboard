@@ -1,36 +1,46 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.container {
     display: grid;
-    grid-template-columns: 4rem 1fr 7fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 6fr;
     margin: 0;
     height: 100vh;
-    width: 100vw;
-
+    width: calc(100vw - 4rem);
+    margin-left: 4rem;
 }
 
 .sidebar {
-    background-color: blue;
+    background-color: #06283D;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    grid-column: 1 / 2;
-    grid-row: 1 / 7;
+    width: 4rem;
+    height: 100vh;
+    transition: all 0.5s ease;
 }
 
 .active {
-    grid-column: 1 / 3;
-    grid-row: 1 / 7;
+    width: 15rem;
+}
+
+#sidebarToggle {
+    margin-bottom: 2rem;
 }
 
 
 #bar {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
     background-color: white;
 }
 
 #content {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -55,11 +65,18 @@ a {
     border: none;
     color: white;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.menuButton:nth-child(7) {
+    margin-top: 2rem;
 }
 
 .menuButton:hover {
     cursor: pointer;
+    background-color: #1363DF;
+    transition: all 0.5s ease;
 }
 
 .menuButton img {
@@ -70,20 +87,32 @@ a {
 .sidebarText {
     width: 100%;
     text-align: center;
+    font-size: 1rem;
+    display: none;
 }
 
 .sidebarIcon {
     margin-left: 1rem;
 }
 
-.hiddenText {
-    display: none;
+.activeText {
+    display: block;
+    animation: fade 0.5s;
 }
 
 /* rotate the icon 90 degrees when the menu is active */
 .active #logo {
     transform: rotate(90deg);
     transition: all 0.5s ease;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
