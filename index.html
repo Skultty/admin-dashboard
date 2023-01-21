@@ -9,12 +9,57 @@
     <title>dashboard</title>
 </head>
 <body>
-    <div id="sidebar">
-
+    <div id="sidebar" class="sidebar">
+        <button id="sidebarToggle" class="menuButton" >
+            <img id="logo" class="sidebarIcon"  src="./assets/dots-horizontal.png" alt="">
+            <p class="sidebarText hiddenText">Dashboard</p>
+        </button>
+        <nav>
+            <ul>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/home.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Home</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/account.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Profile</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/message.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Messages</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/alarm.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">History</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/calendar-check.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Tasks</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/account-group.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Communities</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/cog.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Settings</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/face-agent.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Support</a>
+                </li>
+                <li class="menuButton">
+                    <img class="sidebarIcon" src="./assets/shield.png" alt="">
+                    <a href="#" class="sidebarText hiddenText">Privacy</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <div id="bar" >
+    <div class="container">
+        <div id="bar" >
 
+        </div>
+        <div id="content" ></div>
     </div>
-    <div id="content" ></div>
 </body>
 </html>
