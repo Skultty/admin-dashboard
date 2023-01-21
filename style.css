@@ -89,6 +89,7 @@ a {
     text-align: center;
     font-size: 1rem;
     display: none;
+    font-weight: bold;
 }
 
 .sidebarIcon {
