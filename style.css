@@ -210,3 +210,58 @@ a {
     background-color: #0B3E9F;
     transition: all 0.5s ease;
 }
+
+#content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    height: 90%;
+    margin-top: 1rem;
+}
+
+#projects > div {
+    background-color: white;
+    border-radius: 10px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3% 97%;
+    grid-template-rows: 1fr;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    height: 100%;
+
+}
+
+.card img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.cardButtons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+}
+
+.colored {
+    background-color: #47B5FF;
+    border-radius: 10px 0 0 10px;
+}
