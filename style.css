@@ -265,3 +265,24 @@ a {
     background-color: #47B5FF;
     border-radius: 10px 0 0 10px;
 }
+
+.news {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    width: 100%;
+    height: calc(90% - 2rem);
+}
+
+.newsCard {
+    background-color: white;
+    padding: 1rem;
+    display: grid;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.news h4 {
+    padding-bottom: 1rem;
+}
